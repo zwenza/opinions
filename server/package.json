@@ -1,0 +1,22 @@
+{
+  "name": "graphql-server",
+  "version": "1.0.0",
+  "description": "a simple node graphql server",
+  "main": "index.js",
+  "author": "David Joech",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.3",
+    "express": "^4.15.3",
+    "express-graphql": "^0.6.5",
+    "faker": "^4.1.0",
+    "graphiql": "^0.10.2",
+    "graphql": "^0.9.6",
+    "pg": "^6.2.3",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^3.30.4"
+  }
+}
