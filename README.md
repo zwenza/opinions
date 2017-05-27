@@ -1,6 +1,6 @@
-# graphql-fun
+# Opinions
 
-This is just a small app i build to try out GraphQL!
+Some sort of twitter clone to learn GraphQL 📚
 
 ## i am using...
 
