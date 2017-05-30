@@ -1,7 +1,7 @@
 const graphql = require('graphql');
 
-const tweetQuery = require('./models/tweet/tweetQuery');
-const userQuery = require('./models/user/userQuery');
+const tweetQuery = require('../models/tweet/tweetQuery');
+const userQuery = require('../models/user/userQuery');
 
 const combinedQueries = Object.assign(tweetQuery, userQuery);
 

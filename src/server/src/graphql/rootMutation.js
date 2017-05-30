@@ -1,6 +1,6 @@
 const graphql = require('graphql');
 
-const userMutation = require('./models/user/userMutation');
+const userMutation = require('../models/user/userMutation');
 
 const combinedMutations = Object.assign({}, userMutation);
 

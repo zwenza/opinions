@@ -6,7 +6,7 @@
   "author": "David Joech",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js"
+    "start": "node ./src/index.js"
   },
   "dependencies": {
     "cors": "^2.8.3",
