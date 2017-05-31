@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 const Fake = require('faker');
 
-const db = new Sequelize('postgres://postgres:root@localhost:5432/graphql');
+const db = new Sequelize('postgres://florian@localhost:5432/graphql');
 
 // Models
 const User = db.define('user', {
@@ -33,8 +33,10 @@ const Tweet = db.define('tweet', {
 User.hasMany(Tweet);
 Tweet.belongsTo(User);
 
-db.sync({force: true}).then(() => {
-    for(let i = 0; i < 10; i++){
+db.sync({
+    force: true
+}).then(() => {
+    for (let i = 0; i < 10; i++) {
         User.create({
             firstName: Fake.name.firstName(),
             lastName: Fake.name.lastName(),

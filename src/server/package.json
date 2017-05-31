@@ -6,17 +6,20 @@
   "author": "David Joech",
   "license": "MIT",
   "scripts": {
-    "start": "node ./src/index.js"
+    "start": "nodemon index.js"
   },
   "dependencies": {
+    "body-parser": "^1.17.2",
     "cors": "^2.8.3",
     "express": "^4.15.3",
-    "express-graphql": "^0.6.5",
     "faker": "^4.1.0",
-    "graphiql": "^0.10.2",
-    "graphql": "^0.9.6",
+    "graphql": "^0.10.1",
+    "graphql-server-express": "^0.8.0",
+    "graphql-tools": "^1.0.0",
     "pg": "^6.2.3",
-    "pg-hstore": "^2.3.2",
     "sequelize": "^3.30.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
   }
 }
