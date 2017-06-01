@@ -1,10 +1,10 @@
-const Sequelize = require('sequelize');
-const Fake = require('faker');
+const Sequelize = require("sequelize");
+const Fake = require("faker");
 
-const db = new Sequelize('postgres://postgres:root@localhost:5432/graphql');
+const db = new Sequelize("postgres://postgres:root@localhost:5432/graphql");
 
 // Models
-const User = db.define('user', {
+const User = db.define("user", {
   firstName: {
     type: Sequelize.STRING,
     allowNull: false
@@ -19,10 +19,14 @@ const User = db.define('user', {
     validate: {
       isEmail: true
     }
+  },
+  password: {
+    type: Sequelize.STRING,
+    allowNull: false
   }
 });
 
-const Tweet = db.define('tweet', {
+const Tweet = db.define("tweet", {
   message: {
     type: Sequelize.STRING,
     allowNull: false
@@ -38,17 +42,12 @@ db
     force: true
   })
   .then(() => {
-    for (let i = 0; i < 10; i++) {
-      User.create({
-        firstName: Fake.name.firstName(),
-        lastName: Fake.name.lastName(),
-        email: Fake.internet.email()
-      }).then(person => {
-        person.createTweet({
-          message: `hi my name is ${person.firstName}`
-        });
-      });
-    }
+    User.create({
+      firstName: "David",
+      lastName: "Joech",
+      email: "test@test.at",
+      password: "test"
+    });
   });
 
 module.exports = db;
