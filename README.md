@@ -10,6 +10,7 @@ Some sort of twitter clone to learn GraphQL 📚
 * React - [github.com/facebook/react](https://github.com/facebook/react)
 * React Apollo - [github.com/apollographql/react-apollo](https://github.com/apollographql/react-apollo)
 * Styled Components - [github.com/styled-components/styled-components](https://github.com/styled-components/styled-components)
+* JWT - [github.com/auth0/node-jsonwebtoken](https://github.com/auth0/node-jsonwebtoken)
 
 ## getting started
 
